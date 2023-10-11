@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Styling</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        div {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input,
+        textarea,
+        select {
+            margin: 10px;
+            padding: 8px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        select {
+            width: 318px; /* Adjusted to accommodate the border size */
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>School Trip Form</h1>
+        <form action="form.php">
+            <input type="text" placeholder="Enter your name">
+            <br>
+            <label for="sectionida">
+                <input type="radio" id="sectionida" value="section a" name="student name">section a
+            </label>
+            <label for="sectionidb">
+                <input type="radio" id="sectionidb" value="section b" name="student name">section b
+            </label>
+            <label for="sectionidc">
+                <input type="radio" id="sectionidc" value="section c" name="student name">section c
+            </label>
+            <label for="sectionidd">
+                <input type="radio" id="sectionidd" value="section d" name="student name">section d
+            </label>
+            <br>
+            <input type="checkbox" name="coming or not" id="toselectthebus">
+            <label for="toselectthebus">coming for the trip or not</label>
+            <br>
+            <textarea name="Explain" id="Explain" cols="30" rows="10" placeholder="explain where you wanted to go and why?"></textarea>
+            <br>
+            <select name="car" id="car">
+                <option value="car">select any one vehicle</option>
+                <option value="car1">Force</option>
+                <option value="car2">bajaj</option>
+                <option value="car3">Ashok leyland</option>
+                <option value="car4">Tata</option>
+            </select>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
